@@ -35,7 +35,6 @@
       --border: rgba(255,215,0,0.15);
     }
 
-    /* Smooth scroll */
     html {
       scroll-behavior: smooth;
     }
@@ -366,8 +365,8 @@
     .brand-name-gold {
       font-family: 'Cinzel', 'Playfair Display', serif;
       font-weight: 800;
-      font-size: clamp(38px, 5vw, 75px);
-      letter-spacing: 1px;
+      font-size: clamp(42px, 8vw, 95px);
+      letter-spacing: 3px;
       line-height: 1.1;
       margin-bottom: 20px;
       background: linear-gradient(180deg, #fffdf5 0%, #ffe9a8 18%, #f5c96a 42%, #d4af37 68%, #9f6d16 100%);
@@ -446,7 +445,7 @@
     .hero-description {
       font-family: 'Poppins', 'Cinzel', sans-serif;
       font-weight: 600;
-      font-size: 20px;
+      font-size: 24px;
       letter-spacing: 1px;
       color: rgba(255, 248, 215, 0.96);
       line-height: 1.3;
@@ -563,49 +562,55 @@
   HEADER SECTION START
   ========================= -->
   <style>
+    /* UPDATED HEADER CSS - Refined for cinematic balance */
     .mp-header-wrap {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       z-index: 1000;
-      padding: 15px 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      transition: background 0.4s ease, backdrop-filter 0.4s ease, box-shadow 0.4s ease;
-      background: transparent;
-      border-bottom: 1px solid transparent;
+      padding: 22px 60px;
+      background: rgba(0,0,0,0.08);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,215,120,0.08);
+      transition: all .4s ease;
     }
     .mp-header-scrolled {
-      background: rgba(5,5,5,0.7);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border-bottom: 1px solid var(--border);
-      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+      background: rgba(5,5,5,0.72);
+      backdrop-filter: blur(22px);
+      -webkit-backdrop-filter: blur(22px);
+      border-bottom: 1px solid rgba(255,215,120,0.12);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.45);
     }
     .mp-logo img {
-      height: 55px; /* CHANGE LOGO HEIGHT HERE */
-      width: auto; /* CHANGE LOGO WIDTH HERE */
-      filter: drop-shadow(0 0 8px rgba(212,175,55,0.6));
-      transition: transform 0.3s;
+      /* CHANGE LOGO HEIGHT HERE */
+      height: 78px;
+      /* CHANGE LOGO WIDTH HERE */
+      width: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 0 8px rgba(212,175,55,.18));
+      transition: all .4s ease;
     }
-    .mp-logo img:hover { transform: scale(1.05); }
     .mp-nav-list {
       display: flex;
       list-style: none;
-      gap: 30px;
+      gap: 42px;
       align-items: center;
     }
     .mp-nav-list li a {
       font-family: 'Cinzel', serif;
       font-weight: 500;
-      font-size: 13px;
-      letter-spacing: 2px;
-      color: #f0e6c5;
+      font-size: 15px;
+      letter-spacing: 3px;
+      color: rgba(255,245,220,.88);
       text-decoration: none;
-      transition: 0.3s;
+      transition: .35s ease;
       position: relative;
+      text-transform: uppercase;
     }
     .mp-nav-list li a::after {
       content: '';
@@ -653,6 +658,7 @@
       .mp-nav-list { display: none; }
       .mp-hamburger { display: flex; }
       .mp-header-wrap { padding: 15px 25px; }
+      .mp-logo img { height: 60px; }
     }
     .mp-mobile-menu {
       position: fixed;
@@ -684,7 +690,6 @@
 
   <header class="mp-header-wrap" id="mpHeader">
     <div class="mp-logo">
-      <!-- CHANGE LOGO SIZE HERE via height/width in CSS above -->
       <img src="logo.png" alt="Maruthi Printers Logo">
     </div>
     <nav>
