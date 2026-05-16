@@ -1,1 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Maruthi Printers | Luxury Printing & Branding</title>
+  <!-- PRELOAD critical assets -->
+  <link rel="preconnect" href="https://godietech.ujwalabookhouse.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* =========================
+       GLOBAL RESET & VARIABLES
+       ========================= */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    body {
+      background: #050505;
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+      color: #fff;
+    }
+
+    :root {
+      --gold: #d4af37;
+      --dark-gold: #9f7928;
+      --black: #050505;
+      --soft-black: #0d0d0d;
+      --glass: rgba(255,255,255,0.08);
+      --border: rgba(255,215,0,0.15);
+    }
+
+    /* Smooth scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* =========================
+       HERO SECTION START
+       (PRESERVED EXACTLY AS PROVIDED)
+       ========================= */
+    .luxury-cinema-hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      max-height: 100vh;
+      overflow: hidden;
+      background: #000000;
+      isolation: isolate;
+    }
+
+    .hero-sacred-video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: translate(-50%, -50%) scale(1.02);
+      z-index: 1;
+      filter: brightness(0.85) contrast(1.12) saturate(1.18);
+      animation: slowZoomCinema 24s ease-in-out infinite alternate;
+      pointer-events: none;
+      will-change: transform;
+    }
+
+    .hero-video-mobile {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transform: translate(-50%, -50%) scale(1.02);
+      z-index: 1;
+      filter: brightness(0.85) contrast(1.12) saturate(1.18);
+      animation: slowZoomCinemaMobile 22s ease-in-out infinite alternate;
+      pointer-events: none;
+      will-change: transform;
+      display: none;
+    }
+
+    @keyframes slowZoomCinema {
+      0% { transform: translate(-50%, -50%) scale(1.02); }
+      100% { transform: translate(-50%, -50%) scale(1.14); }
+    }
+
+    @keyframes slowZoomCinemaMobile {
+      0% { transform: translate(-50%, -50%) scale(1.02); }
+      100% { transform: translate(-50%, -50%) scale(1.12); }
+    }
+
+    @media (min-width: 769px) {
+      .hero-sacred-video { display: block; }
+      .hero-video-mobile { display: none; }
+    }
+    @media (max-width: 768px) {
+      .hero-sacred-video { display: none; }
+      .hero-video-mobile { display: block; }
+    }
+
+    .royal-divine-overlay {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 50% 45%, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.72) 70%, #010000 100%);
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .golden-rays-aura {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 130%;
+      height: 130%;
+      background: radial-gradient(ellipse at 50% 45%, rgba(255, 220, 130, 0.2) 0%, rgba(212, 175, 55, 0.08) 40%, transparent 80%);
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      pointer-events: none;
+      animation: auraBreathing 8s ease-in-out infinite;
+    }
+
+    @keyframes auraBreathing {
+      0% { opacity: 0.55; transform: translate(-50%, -50%) scale(1); }
+      50% { opacity: 1; transform: translate(-50%, -50%) scale(1.08); }
+      100% { opacity: 0.55; transform: translate(-50%, -50%) scale(1); }
+    }
+
+    .sacred-chakra-rotating {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: min(80vw, 950px);
+      height: min(80vw, 950px);
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255, 210, 90, 0.05) 0%, rgba(212, 175, 55, 0.2) 45%, transparent 75%);
+      border: 2px solid rgba(212, 175, 55, 0.55);
+      box-shadow: 0 0 90px rgba(212, 175, 55, 0.4), inset 0 0 70px rgba(255, 200, 70, 0.22);
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      animation: chakraSpinElegant 45s linear infinite;
+    }
+    .sacred-chakra-rotating::before {
+      content: '';
+      position: absolute;
+      top: 12%;
+      left: 12%;
+      width: 76%;
+      height: 76%;
+      border-radius: 50%;
+      border: 1px dashed rgba(255, 215, 120, 0.55);
+      background: radial-gradient(circle, rgba(255, 200, 100, 0.08), transparent);
+    }
+    .sacred-chakra-rotating::after {
+      content: '';
+      position: absolute;
+      top: 27%;
+      left: 27%;
+      width: 46%;
+      height: 46%;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(245, 200, 100, 0.28), transparent 75%);
+      filter: blur(8px);
+    }
+    @keyframes chakraSpinElegant {
+      from { transform: translate(-50%, -50%) rotate(0deg); }
+      to { transform: translate(-50%, -50%) rotate(360deg); }
+    }
+    @media (max-width: 768px) {
+      .sacred-chakra-rotating { display: none !important; }
+    }
+
+    .mobile-subtle-chakra {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 70vw;
+      height: 70vw;
+      max-width: 400px;
+      max-height: 400px;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 3;
+      pointer-events: none;
+      display: none;
+      background: radial-gradient(circle, rgba(255, 210, 90, 0.03) 0%, rgba(212, 175, 55, 0.08) 40%, transparent 70%);
+      border: 1px solid rgba(212, 175, 55, 0.25);
+      box-shadow: 0 0 30px rgba(212, 175, 55, 0.15), inset 0 0 20px rgba(255, 200, 70, 0.08);
+      animation: subtleChakraSpin 35s linear infinite;
+    }
+    
+    .mobile-subtle-chakra::before {
+      content: '';
+      position: absolute;
+      top: 15%;
+      left: 15%;
+      width: 70%;
+      height: 70%;
+      border-radius: 50%;
+      border: 1px dashed rgba(212, 175, 55, 0.2);
+      background: radial-gradient(circle, rgba(255, 200, 100, 0.04), transparent);
+    }
+    
+    .mobile-subtle-chakra::after {
+      content: '';
+      position: absolute;
+      top: 30%;
+      left: 30%;
+      width: 40%;
+      height: 40%;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(245, 200, 100, 0.1), transparent 80%);
+      filter: blur(6px);
+    }
+    
+    @keyframes subtleChakraSpin {
+      from { transform: translate(-50%, -50%) rotate(0deg); }
+      to { transform: translate(-50%, -50%) rotate(360deg); }
+    }
+    
+    @media (max-width: 768px) {
+      .mobile-subtle-chakra {
+        display: block;
+      }
+    }
+
+    .leaves-container {
+      position: absolute;
+      inset: 0;
+      z-index: 5;
+      pointer-events: none;
+      overflow: hidden;
+    }
+    
+    .falling-leaf {
+      position: absolute;
+      pointer-events: none;
+      opacity: 0;
+      will-change: transform;
+      z-index: 5;
+    }
+    
+    .falling-leaf svg {
+      width: 100%;
+      height: 100%;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+    }
+    
+    @keyframes leafFall {
+      0% {
+        opacity: 0;
+        transform: translateY(-20vh) rotate(0deg);
+      }
+      10% {
+        opacity: 0.4;
+      }
+      30% {
+        opacity: 0.55;
+      }
+      90% {
+        opacity: 0.5;
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(120vh) rotate(360deg);
+      }
+    }
+
+    .golden-particles-container {
+      position: absolute;
+      inset: 0;
+      z-index: 4;
+      pointer-events: none;
+      overflow: hidden;
+    }
+    .particle-ember {
+      position: absolute;
+      background: radial-gradient(circle, #FFE2A4, #D4AF37, #b87c2a);
+      border-radius: 50%;
+      opacity: 0;
+      box-shadow: 0 0 10px rgba(255, 210, 90, 0.9);
+      animation: floatSacredParticle linear infinite;
+      will-change: transform, opacity;
+    }
+    @keyframes floatSacredParticle {
+      0% { transform: translateY(0px) rotate(0deg); opacity: 0; }
+      15% { opacity: 0.85; }
+      85% { opacity: 0.6; }
+      100% { transform: translateY(-100vh) rotate(300deg); opacity: 0; }
+    }
+
+    .temple-atmosphere {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 38%;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(20, 12, 5, 0.2), transparent);
+      z-index: 3;
+      pointer-events: none;
+    }
+
+    .cinematic-flare {
+      position: absolute;
+      top: 15%;
+      left: 70%;
+      width: 280px;
+      height: 280px;
+      background: radial-gradient(circle, rgba(255, 200, 90, 0.18), transparent 85%);
+      border-radius: 50%;
+      filter: blur(50px);
+      z-index: 2;
+      pointer-events: none;
+      animation: subtleFlareMove 14s infinite alternate;
+    }
+    @keyframes subtleFlareMove {
+      0% { transform: translate(0, 0) scale(1); opacity: 0.45; }
+      100% { transform: translate(3%, -2%) scale(1.15); opacity: 0.8; }
+    }
+
+    .hero-text-luxury {
+      position: absolute;
+      z-index: 20;
+      bottom: 8%;
+      left: 6%;
+      right: 6%;
+      text-align: left;
+      pointer-events: none;
+    }
+    .text-premium-inner {
+      max-width: 1100px;
+      animation: cinematicTextElevate 1.7s cubic-bezier(0.2, 0.9, 0.4, 1.1) forwards;
+    }
+    @keyframes cinematicTextElevate {
+      0% { opacity: 0; transform: translateY(45px); filter: blur(4px);}
+      100% { opacity: 1; transform: translateY(0); filter: blur(0);}
+    }
+
+    .welcome-maruthi {
+      font-family: 'Cinzel', serif;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 14px;
+      text-transform: uppercase;
+      color: rgba(255, 240, 180, 0.98);
+      margin-bottom: 25px;
+      text-shadow: 0 0 30px rgba(212, 175, 55, 0.8);
+      opacity: 0;
+      animation: welcomeRevealGlow 1.6s ease forwards 0.2s;
+    }
+    @keyframes welcomeRevealGlow {
+      0% { opacity: 0; letter-spacing: 28px; transform: translateY(12px);}
+      100% { opacity: 1; letter-spacing: 14px; transform: translateY(0);}
+    }
+
+    @media (max-width: 1024px) and (min-width: 769px) {
+      .welcome-maruthi { font-size: 14px; }
+    }
+
+    .brand-name-gold {
+      font-family: 'Cinzel', 'Playfair Display', serif;
+      font-weight: 800;
+      font-size: clamp(42px, 8vw, 95px);
+      letter-spacing: 3px;
+      line-height: 1.1;
+      margin-bottom: 20px;
+      background: linear-gradient(180deg, #fffdf5 0%, #ffe9a8 18%, #f5c96a 42%, #d4af37 68%, #9f6d16 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      display: block;
+      position: relative;
+      white-space: nowrap;
+      text-shadow: 0 1px 0 rgba(255,255,255,0.35), 0 2px 4px rgba(0,0,0,0.45), 0 6px 14px rgba(0,0,0,0.55), 0 0 12px rgba(255,210,90,0.28);
+      filter: drop-shadow(0 0 6px rgba(255,215,120,0.30)) drop-shadow(0 0 14px rgba(212,175,55,0.22));
+      transform-origin: left;
+      transition: all 0.35s ease;
+    }
+
+    .shimmer-letter {
+      display: inline-block;
+      position: relative;
+      animation: letterShimmer 0.7s cubic-bezier(0.2, 0.9, 0.6, 1.1) forwards;
+      animation-delay: calc(0.08s * var(--letter-index, 0));
+      opacity: 0;
+      transform: translateY(15px);
+      font-family: 'Cinzel', 'Playfair Display', serif;
+      font-weight: 800;
+      background: linear-gradient(180deg, #fffdf5 0%, #ffe9a8 18%, #f5c96a 42%, #d4af37 68%, #9f6d16 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      text-shadow: 0 1px 0 rgba(255,255,255,0.25), 0 2px 6px rgba(0,0,0,0.5), 0 0 10px rgba(255,210,90,0.22);
+      filter: drop-shadow(0 0 4px rgba(255,215,120,0.22)) drop-shadow(0 0 10px rgba(212,175,55,0.18));
+      transition: all 0.2s ease;
+    }
+
+    @keyframes letterShimmer {
+      0% { opacity: 0; transform: translateY(20px) rotate(-2deg); filter: blur(5px) drop-shadow(0 0 0px rgba(255, 215, 0, 0)); text-shadow: 0 0 0px rgba(255, 215, 0, 0); }
+      30% { opacity: 1; transform: translateY(0px) rotate(0deg); filter: blur(0px) drop-shadow(0 0 8px rgba(255, 220, 80, 0.7)) drop-shadow(0 0 16px rgba(212, 175, 55, 0.5)); text-shadow: 0 0 18px rgba(255, 220, 80, 0.7); }
+      60% { opacity: 1; transform: translateY(0px) rotate(0deg); filter: drop-shadow(0 0 5px rgba(255, 200, 50, 0.55)) drop-shadow(0 0 12px rgba(212, 175, 55, 0.4)); text-shadow: 0 0 10px rgba(255, 200, 50, 0.5); }
+      100% { opacity: 1; transform: translateY(0px) rotate(0deg); filter: drop-shadow(0 0 4px rgba(255, 215, 120, 0.22)) drop-shadow(0 0 10px rgba(212, 175, 55, 0.18)); text-shadow: 0 1px 0 rgba(255,255,255,0.25), 0 2px 6px rgba(0,0,0,0.5), 0 0 10px rgba(255,210,90,0.22); }
+    }
+
+    .shimmer-letter::before {
+      content: '';
+      position: absolute;
+      top: -10%;
+      left: -100%;
+      width: 80%;
+      height: 120%;
+      background: linear-gradient(115deg, transparent 0%, rgba(255, 245, 180, 0.7) 45%, rgba(255, 255, 210, 0.9) 50%, rgba(255, 245, 180, 0.7) 55%, transparent 100%);
+      transform: skewX(-18deg);
+      animation: slantedRayPass 0.65s ease-in-out forwards;
+      animation-delay: calc(0.08s * var(--letter-index, 0) + 0.1s);
+      pointer-events: none;
+      border-radius: 4px;
+      opacity: 0;
+    }
+
+    @keyframes slantedRayPass {
+      0% { left: -100%; opacity: 0; }
+      20% { opacity: 1; }
+      80% { opacity: 0.8; }
+      100% { left: 150%; opacity: 0; }
+    }
+
+    .divine-line-separator {
+      width: 160px;
+      height: 2px;
+      background: linear-gradient(90deg, #F5D78B, rgba(212, 175, 55, 0.5), transparent);
+      margin: 16px 0 24px 0;
+      animation: separatorBreathing 2.6s infinite alternate;
+    }
+    @keyframes separatorBreathing {
+      0% { width: 140px; box-shadow: 0 0 2px #d4af37; opacity: 0.8; }
+      100% { width: 210px; box-shadow: 0 0 16px #ffdf9c; opacity: 1; }
+    }
+
+    .hero-description {
+      font-family: 'Poppins', 'Cinzel', sans-serif;
+      font-weight: 600;
+      font-size: 24px;
+      letter-spacing: 1px;
+      color: rgba(255, 248, 215, 0.96);
+      line-height: 1.3;
+      max-width: 750px;
+      text-shadow: 0 2px 15px rgba(0, 0, 0, 0.7);
+      opacity: 0;
+      animation: descFadeSmooth 1.5s forwards 0.8s;
+      margin-bottom: 18px;
+      margin-left: 0;
+    }
+
+    .service-identity-line {
+      font-family: 'Poppins', 'Cinzel', sans-serif;
+      font-weight: 500;
+      font-size: 17px;
+      letter-spacing: 1px;
+      color: rgba(255, 235, 170, 0.92);
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+      margin-top: 5px;
+      margin-bottom: 18px;
+      border-left: 3px solid #D4AF37;
+      padding-left: 20px;
+      display: inline-block;
+      background: rgba(0,0,0,0.2);
+      backdrop-filter: blur(2px);
+      border-radius: 0 8px 8px 0;
+    }
+
+    .contact-clean-line {
+      font-family: 'Poppins', 'Cinzel', sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      letter-spacing: 0.8px;
+      color: #FFE8B6;
+      text-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
+      margin-top: 8px;
+      border-left: 3px solid #D4AF37;
+      padding-left: 20px;
+      display: inline-block;
+      background: rgba(0,0,0,0.2);
+      backdrop-filter: blur(2px);
+      border-radius: 0 12px 12px 0;
+    }
+    .contact-clean-line strong {
+      font-weight: 800;
+      color: #FAD976;
+      font-size: 19px;
+    }
+
+    @keyframes descFadeSmooth {
+      0% { opacity: 0; transform: translateY(20px);}
+      100% { opacity: 1; transform: translateY(0);}
+    }
+
+    .btn-luxury-wrapper {
+      margin-top: 32px;
+      opacity: 0;
+      animation: btnFadePremium 1.5s forwards 1.2s;
+      pointer-events: auto;
+    }
+    @keyframes btnFadePremium {
+      from { opacity: 0; transform: translateY(25px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    .btn-cinematic {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      background: linear-gradient(135deg, rgba(212, 175, 55, 0.3), rgba(255, 250, 210, 0.12));
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(212, 175, 55, 0.7);
+      padding: 14px 48px;
+      border-radius: 100px;
+      font-family: 'Cinzel', serif;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #FFF6E0;
+      text-decoration: none;
+      transition: all 0.45s cubic-bezier(0.2, 0.9, 0.3, 1.1);
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.5), 0 0 18px rgba(212, 175, 55, 0.5);
+      cursor: pointer;
+    }
+    .btn-cinematic:hover {
+      transform: translateY(-4px) scale(1.02);
+      background: linear-gradient(135deg, rgba(212, 175, 55, 0.5), rgba(255, 245, 180, 0.25));
+      border-color: rgba(245, 215, 120, 0.95);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), 0 0 40px rgba(212, 175, 55, 0.7);
+    }
+
+    @media (max-width: 768px) {
+      .hero-text-luxury { bottom: 10%; left: 5%; right: 5%; text-align: center; }
+      .text-premium-inner { text-align: center; max-width: 100%; }
+      .welcome-maruthi { font-size: 12px; letter-spacing: 10px; margin-bottom: 18px; }
+      .brand-name-gold { font-size: clamp(30px, 6.5vw, 55px); letter-spacing: 2px; margin-bottom: 14px; white-space: nowrap; overflow-x: auto; overflow-y: hidden; text-align: center; scrollbar-width: none; -ms-overflow-style: none; cursor: default; }
+      .brand-name-gold::-webkit-scrollbar { display: none; }
+      .shimmer-letter { font-size: clamp(30px, 6.5vw, 55px); letter-spacing: 1px; }
+      .divine-line-separator { width: 90px; margin: 12px auto 18px auto; }
+      .hero-description { font-size: 18px; max-width: 95%; margin-left: auto; margin-right: auto; margin-bottom: 14px; display: block; text-align: center; }
+      .service-identity-line { font-size: 12px; letter-spacing: 0.8px; padding-left: 12px; padding-right: 10px; border-left-width: 2px; backdrop-filter: blur(4px); background: rgba(0,0,0,0.35); border-radius: 0 20px 20px 0; margin-bottom: 12px; display: inline-block; }
+      .contact-clean-line { font-size: 13px; padding-left: 12px; padding-right: 12px; backdrop-filter: blur(4px); background: rgba(0,0,0,0.3); border-radius: 0 20px 20px 0; display: inline-block; }
+      .contact-clean-line strong { font-size: 14px; }
+      .btn-luxury-wrapper { margin-top: 22px; }
+      .btn-cinematic { padding: 10px 32px; font-size: 10px; letter-spacing: 3px; gap: 8px; }
+    }
+    /* =========================
+       HERO SECTION END
+       ========================= */
+  </style>
+</head>
+<body>
+  <!-- =========================
+  HEADER SECTION START
+  ========================= -->
+  <style>
+    .mp-header-wrap {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background 0.4s ease, backdrop-filter 0.4s ease, box-shadow 0.4s ease;
+      background: transparent;
+      border-bottom: 1px solid transparent;
+    }
+    .mp-header-scrolled {
+      background: rgba(5,5,5,0.7);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+    }
+    .mp-logo img {
+      height: 55px; /* CHANGE LOGO HEIGHT HERE */
+      width: auto; /* CHANGE LOGO WIDTH HERE */
+      filter: drop-shadow(0 0 8px rgba(212,175,55,0.6));
+      transition: transform 0.3s;
+    }
+    .mp-logo img:hover { transform: scale(1.05); }
+    .mp-nav-list {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+      align-items: center;
+    }
+    .mp-nav-list li a {
+      font-family: 'Cinzel', serif;
+      font-weight: 500;
+      font-size: 13px;
+      letter-spacing: 2px;
+      color: #f0e6c5;
+      text-decoration: none;
+      transition: 0.3s;
+      position: relative;
+    }
+    .mp-nav-list li a::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: var(--gold);
+      transition: width 0.3s;
+    }
+    .mp-nav-list li a:hover { color: #fff; }
+    .mp-nav-list li a:hover::after { width: 100%; }
+    .mp-gold-btn {
+      background: linear-gradient(135deg, #d4af37, #b4942e);
+      border: none;
+      padding: 10px 24px;
+      border-radius: 30px;
+      font-family: 'Cinzel', serif;
+      font-weight: 700;
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: #050505;
+      cursor: pointer;
+      transition: 0.3s;
+      box-shadow: 0 0 20px rgba(212,175,55,0.4);
+      text-decoration: none;
+      display: inline-block;
+    }
+    .mp-gold-btn:hover { box-shadow: 0 0 30px #d4af37; transform: translateY(-2px); }
+    .mp-hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      z-index: 1001;
+    }
+    .mp-hamburger span {
+      width: 28px;
+      height: 2px;
+      background: #d4af37;
+      transition: 0.3s;
+    }
+    @media (max-width: 992px) {
+      .mp-nav-list { display: none; }
+      .mp-hamburger { display: flex; }
+      .mp-header-wrap { padding: 15px 25px; }
+    }
+    .mp-mobile-menu {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 80%;
+      max-width: 400px;
+      height: 100vh;
+      background: rgba(5,5,5,0.9);
+      backdrop-filter: blur(30px);
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px;
+      transition: right 0.5s cubic-bezier(0.2,0.9,0.3,1.1);
+      border-left: 1px solid var(--border);
+    }
+    .mp-mobile-menu.active { right: 0; }
+    .mp-mobile-menu a {
+      font-family: 'Cinzel', serif;
+      font-size: 20px;
+      color: #d4af37;
+      margin: 20px 0;
+      text-decoration: none;
+      letter-spacing: 3px;
+    }
+  </style>
+
+  <header class="mp-header-wrap" id="mpHeader">
+    <div class="mp-logo">
+      <!-- CHANGE LOGO SIZE HERE via height/width in CSS above -->
+      <img src="logo.png" alt="Maruthi Printers Logo">
+    </div>
+    <nav>
+      <ul class="mp-nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#mp-services">Services</a></li>
+        <li><a href="#mp-portfolio">Portfolio</a></li>
+        <li><a href="#mp-bulk">Bulk Orders</a></li>
+        <li><a href="#mp-about">About</a></li>
+        <li><a href="#mp-contact">Contact</a></li>
+        <li><a href="https://wa.me/917731086658" class="mp-gold-btn">Get Quote</a></li>
+      </ul>
+    </nav>
+    <div class="mp-hamburger" id="mpHamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+
+  <div class="mp-mobile-menu" id="mpMobileMenu">
+    <a href="#">Home</a>
+    <a href="#mp-services">Services</a>
+    <a href="#mp-portfolio">Portfolio</a>
+    <a href="#mp-bulk">Bulk Orders</a>
+    <a href="#mp-about">About</a>
+    <a href="#mp-contact">Contact</a>
+    <a href="https://wa.me/917731086658" style="color:#050505; background:#d4af37; padding:12px 0; text-align:center; border-radius:40px; margin-top:30px;">Get Quote</a>
+  </div>
+  <script>
+    const header = document.getElementById('mpHeader');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) header.classList.add('mp-header-scrolled');
+      else header.classList.remove('mp-header-scrolled');
+    });
+    const hamburger = document.getElementById('mpHamburger');
+    const mobileMenu = document.getElementById('mpMobileMenu');
+    hamburger.addEventListener('click', () => mobileMenu.classList.toggle('active'));
+    document.querySelectorAll('.mp-mobile-menu a').forEach(link => {
+      link.addEventListener('click', () => mobileMenu.classList.remove('active'));
+    });
+  </script>
+  <!-- =========================
+  HEADER SECTION END
+  ========================= -->
+
+  <!-- =========================
+  HERO SECTION (EXISTING)
+  ========================= -->
+  <div class="luxury-cinema-hero">
+    <video class="hero-sacred-video" autoplay loop muted playsinline preload="metadata">
+      <source src="https://godietech.ujwalabookhouse.com/wp-content/uploads/2026/05/9fa87968-6429-4c72-8e49-a3bd384a6a24.mp4" type="video/mp4">
+    </video>
+    <video class="hero-video-mobile" autoplay loop muted playsinline preload="metadata">
+      <source src="https://godietech.ujwalabookhouse.com/wp-content/uploads/2026/05/2d40062e-858c-415d-b0bc-724517c18361.mp4" type="video/mp4">
+    </video>
+    <div class="royal-divine-overlay"></div>
+    <div class="golden-rays-aura"></div>
+    <div class="sacred-chakra-rotating"></div>
+    <div class="cinematic-flare"></div>
+    <div class="temple-atmosphere"></div>
+    <div class="mobile-subtle-chakra"></div>
+    <div class="leaves-container" id="leavesContainer"></div>
+    <div class="golden-particles-container" id="premiumParticles"></div>
+    <div class="hero-text-luxury">
+      <div class="text-premium-inner">
+        <div class="welcome-maruthi">WELCOME TO</div>
+        <h1 class="brand-name-gold" id="mainBrandTitle">MARUTHI PRINTERS</h1>
+        <div class="divine-line-separator"></div>
+        <div class="hero-description">Printing which Drives Your Business</div>
+        <div class="service-identity-line">✦ Printing | Branding | Designing | Signage ✦</div>
+        <div class="contact-clean-line">📞 Call us: <strong>9611231563</strong></div>
+        <div class="btn-luxury-wrapper">
+          <a href="#" class="btn-cinematic" id="exploreBtn">EXPLORE EXCELLENCE ✦</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    (function() {
+      const brandTitle = document.getElementById('mainBrandTitle');
+      if (brandTitle) {
+        const originalText = brandTitle.innerText;
+        const letters = originalText.split('');
+        brandTitle.innerHTML = '';
+        letters.forEach((letter, idx) => {
+          if (letter === ' ') brandTitle.innerHTML += '<span style="display:inline-block; width:0.3em;"></span>';
+          else {
+            const span = document.createElement('span');
+            span.className = 'shimmer-letter';
+            span.innerText = letter;
+            span.style.setProperty('--letter-index', idx);
+            brandTitle.appendChild(span);
+          }
+        });
+      }
+      const leavesContainer = document.getElementById('leavesContainer');
+      if (leavesContainer) {
+        const leafSvg = `<svg viewBox="0 0 24 24" fill="none"><path d="M12 2C12 2 8 6 8 12C8 18 12 22 12 22C12 22 16 18 16 12C16 6 12 2 12 2Z" fill="#2D5A1E" stroke="#4A8B2C" stroke-width="0.5" opacity="0.7"/><path d="M12 4C10 8 10 12 12 16C14 12 14 8 12 4Z" fill="#3A7227" opacity="0.5"/></svg>`;
+        for (let i = 0; i < 45; i++) {
+          const leaf = document.createElement('div'); leaf.className = 'falling-leaf';
+          const size = 14 + Math.random() * 12; leaf.style.width = size+'px'; leaf.style.height = size+'px';
+          leaf.style.left = Math.random()*100+'%'; leaf.style.animationDuration = 7+Math.random()*12+'s';
+          leaf.style.animationDelay = Math.random()*20+'s'; leaf.style.animationName = 'leafFall';
+          leaf.style.animationTimingFunction = 'linear'; leaf.style.animationIterationCount = 'infinite';
+          leaf.style.opacity = 0.25+Math.random()*0.3; leaf.innerHTML = leafSvg; leavesContainer.appendChild(leaf);
+        }
+      }
+      const particlesContainer = document.getElementById('premiumParticles');
+      if (particlesContainer) {
+        for (let i = 0; i < (window.innerWidth<=768?40:80); i++) {
+          const p = document.createElement('div'); p.classList.add('particle-ember');
+          p.style.width = (Math.random()*5+1.5)+'px'; p.style.height = p.style.width;
+          p.style.left = Math.random()*100+'%'; p.style.animationDuration = 8+Math.random()*16+'s';
+          p.style.animationDelay = Math.random()*12+'s'; particlesContainer.appendChild(p);
+        }
+      }
+      document.getElementById('exploreBtn')?.addEventListener('click',(e)=>{e.preventDefault(); window.scrollTo({top:window.innerHeight*0.9,behavior:'smooth'});});
+    })();
+  </script>
+  <!-- =========================
+  HERO SECTION END
+  ========================= -->
+
+  <!-- =========================
+  SERVICES SECTION START
+  ========================= -->
+  <style>
+    #mp-services {
+      background: var(--soft-black);
+      padding: 100px 20px;
+      position: relative;
+      z-index: 10;
+    }
+    .mp-section-title {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(28px, 5vw, 48px);
+      color: var(--gold);
+      text-align: center;
+      margin-bottom: 60px;
+      letter-spacing: 4px;
+    }
+    .mp-services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+    .mp-service-card {
+      background: rgba(20,20,20,0.6);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 35px 25px;
+      text-align: center;
+      transition: 0.4s;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    }
+    .mp-service-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--gold);
+      box-shadow: 0 20px 40px rgba(212,175,55,0.25);
+    }
+    .mp-service-icon {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+    .mp-service-card h3 {
+      font-family: 'Cinzel', serif;
+      color: #e6c468;
+      margin-bottom: 12px;
+      font-size: 18px;
+    }
+    .mp-service-card p {
+      font-family: 'Poppins', sans-serif;
+      color: #ccc;
+      font-size: 13px;
+    }
+  </style>
+
+  <section id="mp-services">
+    <h2 class="mp-section-title">Our Premium Services</h2>
+    <div class="mp-services-grid">
+      <!-- CHANGE SERVICES HERE by editing text below -->
+      <div class="mp-service-card"><div class="mp-service-icon">🖨️</div><h3>Digital Printing</h3><p>High-speed precision for vibrant results.</p></div>
+      <div class="mp-service-card"><div class="mp-service-icon">📚</div><h3>Offset Printing</h3><p>Bulk quality with rich color accuracy.</p></div>
+      <div class="mp-service-card"><div class="mp-service-icon">📄</div><h3>Flyers</h3><p>Eye-catching designs that convert.</p></div>
+      <div class="mp-service-card"><div class="mp-service-icon">📖</div><h3>Brochures</h3><p>Luxury folds for corporate storytelling.</p></div>
+      <div class="mp-service-card"><div class="mp-service-icon">💳</div><h3>Visiting Cards</h3><p>Premium stock, gold foil, embossing.</p></div>
+      <div class="mp-service-card"><div class="mp-service-icon">💒</div><h3>Wedding Cards</h3><p>Regal invitations with intricate laser cuts.</p></div>
+      <div class="mp-service-card"><div class="mp-service-icon">🪪</div><h3>ID Cards</h3><p>Durable PVC with advanced security.</p></div>
+      <div class="mp-service-card"><div class="mp-service-icon">👕</div><h3>T-Shirt Printing</h3><p>DTF, screen, and embroidery.</p></div>
+      <div class="mp-service-card"><div class="mp-service-icon">🪧</div><h3>Sign Boards</h3><p>Acrylic, metal, and illuminated.</p></div>
+      <div class="mp-service-card"><div class="mp-service-icon">💡</div><h3>LED Boards</h3><p>Energy-efficient programmable displays.</p></div>
+      <div class="mp-service-card"><div class="mp-service-icon">✨</div><h3>Acrylic Signage</h3><p>3D letters with golden finishes.</p></div>
+      <div class="mp-service-card"><div class="mp-service-icon">🎤</div><h3>Roll-up Standee</h3><p>Portable premium exhibition displays.</p></div>
+    </div>
+  </section>
+  <!-- =========================
+  SERVICES SECTION END
+  ========================= -->
+
+  <!-- =========================
+  WHY CHOOSE US SECTION START
+  ========================= -->
+  <style>
+    #mp-why {
+      background: #0a0a0a;
+      padding: 90px 20px;
+      text-align: center;
+    }
+    .mp-stats-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .mp-stat-card {
+      background: var(--glass);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border);
+      padding: 40px 30px;
+      border-radius: 30px;
+      min-width: 220px;
+      transition: 0.4s;
+    }
+    .mp-stat-card:hover {
+      border-color: var(--gold);
+      box-shadow: 0 0 35px rgba(212,175,55,0.3);
+    }
+    .mp-stat-number {
+      font-family: 'Cinzel', serif;
+      font-size: 44px;
+      color: var(--gold);
+    }
+  </style>
+
+  <section id="mp-why">
+    <h2 class="mp-section-title">Why Choose Maruthi</h2>
+    <div class="mp-stats-grid">
+      <div class="mp-stat-card"><div class="mp-stat-number">15+</div><p>Years Experience</p></div>
+      <div class="mp-stat-card"><div class="mp-stat-number">50k+</div><p>Projects Delivered</p></div>
+      <div class="mp-stat-card"><div class="mp-stat-number">100%</div><p>Quality Assurance</p></div>
+      <div class="mp-stat-card"><div class="mp-stat-number">24h</div><p>Express Delivery</p></div>
+    </div>
+  </section>
+  <!-- =========================
+  WHY CHOOSE US SECTION END
+  ========================= -->
+
+  <!-- =========================
+  PORTFOLIO SECTION START
+  ========================= -->
+  <style>
+    #mp-portfolio {
+      background: var(--soft-black);
+      padding: 90px 20px;
+    }
+    .mp-portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+    .mp-portfolio-item {
+      height: 280px;
+      border-radius: 28px;
+      overflow: hidden;
+      position: relative;
+      background: #111;
+      border: 1px solid #222;
+      transition: 0.5s;
+    }
+    .mp-portfolio-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s;
+    }
+    .mp-portfolio-item:hover img { transform: scale(1.08); }
+    .mp-portfolio-item:hover { border-color: var(--gold); }
+    .mp-portfolio-overlay {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: linear-gradient(transparent, rgba(0,0,0,0.8));
+      padding: 20px;
+      font-family: 'Cinzel', serif;
+      color: #d4af37;
+    }
+  </style>
+
+  <section id="mp-portfolio">
+    <h2 class="mp-section-title">Cinematic Portfolio</h2>
+    <div class="mp-portfolio-grid">
+      <div class="mp-portfolio-item"><img src="https://placehold.co/600x400/1a1a1a/d4af37?text=Printing" alt="Printing"><div class="mp-portfolio-overlay">Premium Printing</div></div>
+      <div class="mp-portfolio-item"><img src="https://placehold.co/600x400/1a1a1a/d4af37?text=Signage" alt="Signage"><div class="mp-portfolio-overlay">Luxury Signage</div></div>
+      <div class="mp-portfolio-item"><img src="https://placehold.co/600x400/1a1a1a/d4af37?text=Branding" alt="Branding"><div class="mp-portfolio-overlay">Corporate Branding</div></div>
+      <div class="mp-portfolio-item"><img src="https://placehold.co/600x400/1a1a1a/d4af37?text=Exhibition" alt="Exhibition"><div class="mp-portfolio-overlay">Exhibition Stands</div></div>
+    </div>
+  </section>
+  <!-- =========================
+  PORTFOLIO SECTION END
+  ========================= -->
+
+  <!-- =========================
+  TESTIMONIALS SECTION START
+  ========================= -->
+  <style>
+    #mp-testimonials {
+      background: #0a0a0a;
+      padding: 80px 20px;
+    }
+    .mp-testimonial-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 35px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .mp-testimonial {
+      background: rgba(255,255,255,0.03);
+      backdrop-filter: blur(15px);
+      padding: 35px;
+      border-radius: 40px;
+      border: 1px solid var(--border);
+      max-width: 400px;
+      transition: 0.3s;
+    }
+    .mp-testimonial:hover { border-color: #d4af37; }
+    .mp-testimonial p { font-style: italic; color: #ddd; }
+    .mp-testimonial h4 { color: #d4af37; margin-top: 20px; font-family: 'Cinzel'; }
+  </style>
+
+  <section id="mp-testimonials">
+    <h2 class="mp-section-title">Client Words</h2>
+    <div class="mp-testimonial-cards">
+      <div class="mp-testimonial"><p>"Maruthi Printers delivered wedding cards that felt like art. Pure luxury."</p><h4>— Priya Sharma</h4></div>
+      <div class="mp-testimonial"><p>"Our corporate branding was flawless. Timely and premium."</p><h4>— Vikram Enterprises</h4></div>
+    </div>
+  </section>
+  <!-- =========================
+  TESTIMONIALS SECTION END
+  ========================= -->
+
+  <!-- =========================
+  BULK CTA BANNER START
+  ========================= -->
+  <style>
+    #mp-bulk {
+      background: linear-gradient(135deg, #0d0d0d, #1a1a0a);
+      padding: 80px 20px;
+      text-align: center;
+      border-top: 1px solid #d4af37;
+      border-bottom: 1px solid #d4af37;
+    }
+    .mp-cta-title {
+      font-family: 'Cinzel', serif;
+      font-size: 36px;
+      color: #fff;
+      margin-bottom: 30px;
+    }
+  </style>
+
+  <section id="mp-bulk">
+    <h2 class="mp-cta-title">Get Your Brand Printed With Excellence</h2>
+    <a href="https://wa.me/917731086658" class="mp-gold-btn" style="font-size:16px; padding:16px 48px;">WhatsApp Now ✦</a>
+  </section>
+  <!-- =========================
+  BULK CTA BANNER END
+  ========================= -->
+
+  <!-- =========================
+  FOOTER SECTION START
+  ========================= -->
+  <style>
+    #mp-contact {
+      background: #020202;
+      padding: 70px 30px 30px;
+      border-top: 1px solid #222;
+    }
+    .mp-footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .mp-footer-logo img {
+      height: 50px;
+      margin-bottom: 15px;
+    }
+    .mp-footer h4 {
+      color: #d4af37;
+      font-family: 'Cinzel';
+      margin-bottom: 15px;
+    }
+    .mp-footer p, .mp-footer a {
+      color: #aaa;
+      font-size: 13px;
+      text-decoration: none;
+      display: block;
+      margin: 6px 0;
+    }
+    .mp-footer a:hover { color: #fff; }
+    .mp-copyright {
+      text-align: center;
+      margin-top: 50px;
+      color: #555;
+      font-size: 12px;
+      border-top: 1px solid #1a1a1a;
+      padding-top: 25px;
+    }
+    <!-- CHANGE PHONE NUMBER HERE or other details below -->
+  </style>
+
+  <footer id="mp-contact" class="mp-footer">
+    <div class="mp-footer-grid">
+      <div class="mp-footer-logo">
+        <img src="logo.png" alt="Logo">
+        <p>Premium Printing & Signage Studio</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="#">Home</a><a href="#mp-services">Services</a><a href="#mp-portfolio">Portfolio</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>📞 9611231563</p>
+        <p>✉️ maruthiprinters09@gmail.com</p>
+        <p>📍 Cottonpet, Bangalore</p>
+      </div>
+    </div>
+    <div class="mp-copyright">© 2025 Maruthi Printers. All rights reserved.</div>
+  </footer>
+  <!-- =========================
+  FOOTER SECTION END
+  ========================= -->
+</body>
+</html>
